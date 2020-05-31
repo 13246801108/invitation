@@ -1,0 +1,291 @@
+html,input,select,textarea,button,a{font: 12px/1 PingFangSC, "Arial","microsoft yahei",sans-serif;}
+body{color: #333;}
+body,p,ul,dl,dt,dd,form,ol{margin:0;}
+h1,h2,h3,h4,h5,h6,strong,b,em{margin: 0;font-weight: normal;font-style: normal;}
+ul,ol{list-style:none;padding:0;}
+i {font-style: normal;}
+a{text-decoration:none;color:#333;outline: none;}
+a:focus {outline:none}
+
+img {border: none;}
+.text-red{
+  color: #ca2424;
+}
+.text-gray{
+  color: #c2c2c2;
+}
+input,button {outline: none;border: none;padding: 0;margin: 0;}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #c2c2c2;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #c2c2c2;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #c2c2c2;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #c2c2c2;
+}
+/* 文本 */
+.ac{text-align: center;}
+.al{text-align: left;}
+.ar{text-align: right;}
+.fwb,.bold,.fw{font-weight: bold;}
+
+.w1{width: 1rpx;}
+
+
+/* 隐藏 */
+.hide {display: none!important;}
+
+
+
+
+/* 显示 */
+.show {display: block!important;}
+
+
+.tb {display: table-cell;}
+
+
+/* 盒模型 */
+.flex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+/* 垂直布局 */
+.flex-col{
+  flex-flow: column;
+  -webkit-flex-flow: column;
+}
+
+
+/* 宽度随屏幕改变变化(使用元素自身) */
+/*https://www.jianshu.com/p/57a94430dcbe*/
+.flex_auto {
+flex: auto;
+-webkit-flex: auto;
+-webkit-box-flex: 1;
+-ms-flex: auto;
+-ms-box-flex: 1;
+}
+
+.flex-1 {
+flex: 1;
+-webkit-flex: 1;
+-webkit-box-flex: 1;
+-ms-flex: 1;
+-ms-box-flex: 1;
+}
+
+
+
+/* 垂直 水平 居中(使内部元素居中) */
+.flex-center {
+	justify-content: center;
+	-webkit-justify-content: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+/* 水平居中 */
+.flex-align-center{
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+
+/* 垂直 居中(使内部元素居中) */
+.flex-ver {
+	align-items: center;
+	-webkit-align-items: center;
+}
+.flex-end {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+/* flex 换行 */
+.flex-wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+/* flex 容器（设置为flex）内子元素向两边顶齐平分 */
+.flex-sb {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+/* 容器（设置为flex）内子元素靠最后对齐（水平时比较像右浮动） */
+.flex-jcfe {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+/* 容器（设置为flex）内子元素靠最前对齐（水平时比较像左浮动） */
+.flex-jcfs {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+/* 容器（设置为flex）内子元素等高 */
+.flex-ais {
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+/* 容器（设置为flex）内子元素置底 */
+.flex-aife {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+/* css 箭头 */
+.arrow{
+  border: solid #bbb;
+  border-width: 1px 1px 0 0;
+}
+.ar-h24{width: 18px;height: 18px;}
+.ar-h20{width: 14px;height: 14px;}
+.arrow-right{-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+.arrow-down{-webkit-transform: rotate(135deg) translate(-2px,2px);transform: rotate(135deg) translate(-2px,2px);}
+.arrow-up{-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
+.rotate90{
+  transform:rotate(90deg);
+}
+.rotate270{
+  transform:rotate(270deg);
+}
+
+/* 动画的渐变过渡 */
+.trs {
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+
+/* 非盒模型居中 */
+/* 非flex垂直居中（在要居中的元素外加上一层.wm-vcrl的block） */
+.wm-vcrl {
+  height: 100%;
+  margin: auto;
+  writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+}
+
+/* 非flex水平居中（使用了非flex垂直居中后在要居中的元素上加上class）（要居中的元素有确定的大小） */
+.wm-vctb{
+  margin: auto 0;
+  writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  -webkit-writing-mode: horizontal-tb;
+}
+
+
+/* writing-mode 垂直流 （文字垂直排版）*/
+.verticle-mode {
+    writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;      
+    writing-mode: vertical-rl;
+}
+
+
+/* 浮动 */
+.pull-left {float: left;}
+.pull-right {float: right;}
+
+
+/* 清除浮动 */
+.ourter {zoom: 1;}
+.ourter:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+
+
+/* fixed */
+.fixed--top {position: fixed;top: 0;bottom: auto;z-index: 5;width: 100%;}
+.fixed--bottom {position: fixed;top: auto;bottom: 0;z-index: 5;width: 100%;}
+
+
+/* 表单验证错误提示 */
+.error {color: #fb8372;}
+
+
+/* 省略号 */
+.ell {
+  display:block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* 多行省略 */
+/* 需要设定相应行数的高度 */
+.line-clamp-2 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 显示2行 */
+.line--2 {-webkit-line-clamp: 2;}
+/* 显示3行 */
+.line--3 {-webkit-line-clamp: 3;}
+/* 显示4行 */
+.line--4 {-webkit-line-clamp: 4;}
+/* 显示5行 */
+.line--5 {-webkit-line-clamp: 5;}
+
+/* 阴影 */
+.shadow {box-shadow: 0 2px 2px rgba(66,66,66,.2);position: relative;z-index: 2;}
+
+/*元素在浏览器中的外貌
+ *appearance: none; 去除元素在浏览器中的外貌
+ *所有主流浏览器都不支持 appearance 属性。
+ *Firefox 支持替代的 -moz-appearance 属性。
+ *Safari 和 Chrome 支持替代的 -webkit-appearance 属性。
+ *appearance: normal|icon|window|button|menu|field;
+ */
+.ap-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* textarea--resize-none */
+.res-none {resize: none;}
+
+
+/*=========================== 滤镜 ===============================*/
+
+/* 模糊 */
+/*.filter {
+  filter: url(blur.svg#blur);
+  -webkit-filter: blur(10px); 
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); 
+}*/
+
+/*=========================== 滤镜 -- end ===============================*/
+
+
+
+
